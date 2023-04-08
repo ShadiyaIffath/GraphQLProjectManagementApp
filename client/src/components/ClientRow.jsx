@@ -12,7 +12,7 @@ export default function ClientRow({ client }) {
     //2. REFRESH CACHE (This is more ideal for performance
     update(cache, { data: { deleteClient } }) {
       // This is more ideal for performance
-      const { clients } = cache.readQuery({ query: GET_CLIENTS }); //Here will fetch the cached query result of GET_CLIENTS
+      const { clients } = cache.readQuery({ query: GET_CLIENTS }); //Here we will fetch the cached query result of GET_CLIENTS
       cache.writeQuery({
         // This will update the cached data refreshes the client page
         query: GET_CLIENTS,

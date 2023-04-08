@@ -27,7 +27,7 @@ export default function AddProjectModal() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (name === "" || description === "" || status === "" || clientId == "") {
+    if (name === "" || description === "" || status === "" || clientId === "") {
       return alert("Please fill in all the fields");
     } else {
       addProject(name, description, status, clientId);
