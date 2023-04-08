@@ -50,9 +50,10 @@ const Mutations = new GraphQLObjectType({
           type: new GraphQLEnumType({
             name: "ProjectStatus",
             values: {
-              NEW: { value: "Not Started" },
-              PROGRESS: { value: "In Progress" },
-              DONE: { value: "Completed" },
+              //best to make the graphql enum lowercase
+              new: { value: "Not Started" },
+              progress: { value: "In Progress" },
+              done: { value: "Completed" },
             },
           }),
           defaultValue: "Not Started",
